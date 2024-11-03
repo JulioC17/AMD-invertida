@@ -13,6 +13,7 @@ btn.addEventListener("click", () => {
     const rangoInferiorFloat = parseFloat(rangoInferior)
     const lotajeCuentaReal = 10 / ((rangoSuperiorFloat - rangoCentralFloat) * 100000)
     const lotajeDarwinex = 2000 / ((rangoSuperiorFloat - rangoCentralFloat) * 100000)
+    const StopSize = (rangoSuperiorFloat - rangoCentralFloat)*10000
     const takeProfitBuy = (rangoSuperiorFloat - rangoCentralFloat) + rangoSuperiorFloat
     const takeProfitSell = rangoInferiorFloat - (rangoCentralFloat - rangoInferiorFloat)
     console.log(takeProfitSell.toFixed(5));
@@ -44,6 +45,14 @@ btn.addEventListener("click", () => {
             </h3>
             <h3>
                 ${lotajeDarwinex.toFixed(2)}
+            </h3>
+        </div>
+        <div id = "Stop">
+            <h3>
+                Tamaño de Stop
+            </h3>
+            <h3>
+                ${StopSize.toFixed(1)}  pips
             </h3>
         </div>
     `

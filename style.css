@@ -89,6 +89,14 @@ border-radius: 5px;
     padding: 15px;
 }
 
+#Stop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: red;
+}
+
 .operaciones{
     display: flex;
     width: 350px;
