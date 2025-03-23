@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
     const rangoCentralFloat = parseFloat(rangoCentral)
     const rangoInferior = document.querySelector("#rangoInferior").value 
     const rangoInferiorFloat = parseFloat(rangoInferior)
-    const lotajeCuentaReal = 10 / ((rangoSuperiorFloat - rangoCentralFloat) * 100000)
+    const lotajeCuentaReal = 1000 / ((rangoSuperiorFloat - rangoCentralFloat) * 100000)
     const lotajeDarwinex = 2000 / ((rangoSuperiorFloat - rangoCentralFloat) * 100000)
     const StopSize = (rangoSuperiorFloat - rangoCentralFloat)*10000
     const takeProfitBuy = (rangoSuperiorFloat - rangoCentralFloat) + rangoSuperiorFloat
@@ -32,7 +32,7 @@ btn.addEventListener("click", () => {
     document.querySelector(".lotaje").innerHTML = `
         <div id = "cuentaReal">
             <h3>
-                Cuenta Real:
+                Cuenta Darwinex 1%:
             </h3>
             <h3>
                 ${lotajeCuentaReal.toFixed(2)}
